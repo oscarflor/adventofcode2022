@@ -2,6 +2,7 @@
 with open ('Day 1/Part 1/input.txt') as input:
     data = input.readlines()
 
+data.append('\n')
 highest_cal = 0
 current_cal = 0
 for line in data:
