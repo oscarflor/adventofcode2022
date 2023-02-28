@@ -6,12 +6,11 @@ for line in data:
     line = line.strip()
     length = len(line)
     sack1, sack2 = line[:length//2], line[length//2:]
-    for item in sack1:
-        if item in sack2:
-            if item.isupper():
-                total += ord(item) - 38
-            else:
-                total += ord(item) - 96
-            break
+    intersection = set(sack1) & set(sack2)
+    item = intersection.pop()
+    if item.isupper():
+        total += ord(item) - 38
+    else:
+        total += ord(item) - 96
 
 print(total)
