@@ -19,7 +19,7 @@ for index, line in enumerate(data):
         if len(stacks_list) < stack:
             stacks_list.append(deque())
         if crate != '':
-            stacks_list[stack-1].insert(0, crate)
+            stacks_list[stack-1].appendleft(crate)
 
 # pprint(stacks_list)
 
