@@ -6,7 +6,7 @@ for pair in data:
     pairs = pair.strip().split(',')
     pairs[0] = [int(i) for i in pairs[0].split('-')]
     pairs[1] = [int(i) for i in pairs[1].split('-')]
-    # if real code this if should probably be a helper function for clarity (it basically reads  is pair 1 a subset of pair 2 or is pair 2 a subset of pair 1)
+    # if real code this if should probably be a helper function for clarity (it basically reads is pair 1 a subset of pair 2 or is pair 2 a subset of pair 1)
     if (pairs[0][1] <= pairs[1][1] and pairs[0][0] >= pairs[1][0]) or \
         (pairs[1][1] <= pairs[0][1] and pairs[1][0] >= pairs[0][0]):
         total += 1
