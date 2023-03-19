@@ -50,7 +50,7 @@ def find_dir_to_delete(data, min_size, current_dir='root',smallest_dir={'size': 
             #     if v >= min_size:
             #         if v < smallest_dir['size']:
             #             smallest_dir = {k:v, 'dir': current_dir}
-            if (k == 'size') and (v >= min_size) and (v < smallest_dir['size']):
+            if k == 'size' and v >= min_size and v < smallest_dir['size']:
                 smallest_dir = {k:v, 'dir': current_dir}
     return smallest_dir
 
