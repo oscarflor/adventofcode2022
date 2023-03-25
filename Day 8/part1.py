@@ -47,5 +47,4 @@ for i, row in enumerate(trees):
             if is_visible_above or is_visible_below or is_visible_left or is_visible_right:
                 total_visible += 1
 
-            
 print(total_visible)
